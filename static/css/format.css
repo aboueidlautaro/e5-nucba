@@ -1,0 +1,23 @@
+/* Import Montserrat font  */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+:root {
+  --background: #131415;
+  --black-graphite: "#252525";
+  --white: "#ffffff";
+  --yellow-primary: "#FFA400";
+  --yellow-secondary: "#FFA100";
+  --red-primary: "#FC2933";
+  --red-secondary: "#FB103D";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--background);
+}
