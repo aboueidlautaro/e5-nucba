@@ -17,7 +17,7 @@ Si se desea, la demo del proyecto desplegado está en el siguiente link para pod
 ## Visualización final
 
 Se esperaba lograr este resultado:  
-![alt text](https://ibb.co/9vsTYNY "Figma Nucbazappi")  
+![alt text](https://i.ibb.co/b3zBdPd/E5-Web.png "Figma Nucbazappi")  
 
 El resultado que se obtuvo: (en proceso...)  
-![alt text](https://ibb.co/9vsTYNY "Clon Nucbazappi")
+![alt text](https://i.ibb.co/b3zBdPd/E5-Web.png "Clon Nucbazappi")
