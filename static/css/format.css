@@ -3,7 +3,7 @@
 
 :root {
   --background: #131415;
-  --black-graphite: "#252525";
+  --black-graphite: #252525;
   --white: "#ffffff";
   --yellow-primary: "#FFA400";
   --yellow-secondary: "#FFA100";
@@ -20,4 +20,6 @@
 body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--background);
+}
+.sectionportada {
 }
