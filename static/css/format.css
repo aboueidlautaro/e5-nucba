@@ -4,11 +4,11 @@
 :root {
   --background: #131415;
   --black-graphite: #252525;
-  --white: "#ffffff";
-  --yellow-primary: "#FFA400";
-  --yellow-secondary: "#FFA100";
-  --red-primary: "#FC2933";
-  --red-secondary: "#FB103D";
+  --white: #ffffff;
+  --yellow-primary: #ffa400;
+  --yellow-secondary: #ffa100;
+  --red-primary: #fc2933;
+  --red-secondary: #fb103d;
 }
 
 * {
@@ -44,31 +44,40 @@ body {
   background: var(--background);
   color: --white;
 }
+
 .divtext {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
+
 h1 {
-  color: #fff;
+  color: var(--white);
   font-size: 4rem;
 }
+
 h2 {
-  color: #fff;
+  color: var(--white);
   font-size: 3rem;
 }
+
 .hero1p {
-  color: #fff;
+  color: var(--white);
   font-size: 1.3rem;
   margin-bottom: 15px;
 }
+
 .botonvermas {
   padding: 1rem 3rem;
   border-radius: 15px;
   border: none;
-  color: #fff;
+  color: var(--white);
   font-weight: 800;
-  background: linear-gradient(to right, #ffa400, #fc2933);
+  background: linear-gradient(
+    to right,
+    var(--yellow-primary),
+    var(--red-primary)
+  );
 }
 
 /* DIV2PORCIONES VA A LA DERECHA CON IMAGENES DE PORCIONES DE PIZZA*/
@@ -80,6 +89,7 @@ h2 {
   height: 100%;
   width: 50%;
 }
+
 .imagen1 {
   height: 90%;
   width: 50%;
@@ -89,6 +99,7 @@ h2 {
   background-size: auto;
   position: relative;
 }
+
 .imagen2 {
   position: relative;
   top: -70px;
@@ -99,10 +110,92 @@ h2 {
   background-size: auto;
   background-position: center;
 }
+
+/* SEGUNDA PARTE DEL HERO "Hoy te recomendamos" y sus opciones.********************* */
+
 .divhero2 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
   height: 30%;
   width: 90%;
   background: var(--background);
-  color: --white;
-  border: solid #fff;
+  color: var(--white);
+}
+.spanrecom {
+  color: var(--white);
+  font-size: 1.4rem;
+}
+/* DIV QUE CONTIENE LAS TRES OPCIONES */
+.div3opc {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* RECTANGULO DE CADA UNA DE LAS OPCIONES O CARDS*/
+.divopciones {
+  height: 80%;
+  width: 29%;
+  display: flex;
+  align-items: center;
+  background: var(--black-graphite);
+  border-radius: 15px;
+}
+/* TEXTO ENTRE IMAGEN Y BOTON DE LA CARDS*/
+.divtextopc {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.minispan {
+  color: #504f4f;
+  font-size: 0.9rem;
+}
+.preciohero {
+  background: linear-gradient(
+    to right,
+    var(--yellow-primary),
+    var(--red-primary)
+  );
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.divimgopc1 {
+  background-image: url("../images/menu/Photo Menu-9.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+  width: 100px;
+}
+.divimgopc2 {
+  background-image: url("../images/menu/Photo Menu-8.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+  width: 100px;
+}
+.divimgopc3 {
+  background-image: url("../images/menu/Photo Menu-10.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+  width: 100px;
+}
+.botonagregar {
+  margin-left: 20px;
+  padding: 5px 15px;
+  border-radius: 15px;
+  border: none;
+  color: var(--white);
+  font-weight: 800;
+  background: linear-gradient(
+    to right,
+    var(--yellow-primary),
+    var(--red-primary)
+  );
 }
