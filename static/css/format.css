@@ -197,4 +197,5 @@ body {
     to right,
     var(--yellow-primary),
     var(--red-primary)
-);
+  );
+}
