@@ -28,6 +28,7 @@ main {
   padding: 0 60px;
 }
 
+/* CATEGORIES */
 .categories-section > div > h2 {
   padding: 30px 20px;
   font-size: 1.1rem;
@@ -96,3 +97,183 @@ main {
     var(--red-secondary)
   );
 }
+
+/* COMIENZO PORTADA,ANCHO Y ALTO PARA OCUPAR TODA LA PANTALLA Y CENTRO HERO1 Y HERO2 EN EJE X/Y */
+.sectionportada {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background);
+}
+
+/* HERO */
+
+.divhero1 {
+  display: flex;
+  justify-content: space-between;
+  height: 65%;
+  width: 90%;
+  margin-top: 6rem;
+  background: var(--background);
+  color: --white;
+}
+
+.divtext {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.divtext > h1 {
+  color: var(--white);
+  font-size: 4rem;
+}
+
+.divtext > h2 {
+  color: var(--white);
+  font-size: 3rem;
+}
+
+.hero1p {
+  color: var(--white);
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.botonvermas {
+  padding: 1rem 3rem;
+  border-radius: 15px;
+  border: none;
+  color: var(--white);
+  font-weight: 800;
+  background: linear-gradient(
+    to right,
+    var(--yellow-primary),
+    var(--red-primary)
+  );
+}
+
+/* DIV2PORCIONES VA A LA DERECHA CON IMAGENES DE PORCIONES DE PIZZA*/
+
+.div2porciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+}
+
+.imagen1 {
+  height: 90%;
+  width: 50%;
+  right: -130px;
+  background-image: url("../images/hero/image34.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: relative;
+}
+
+.imagen2 {
+  position: relative;
+  top: -70px;
+  height: 72%;
+  width: 50%;
+  background-image: url("../images/hero/pizza1.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+/* SEGUNDA PARTE DEL HERO "Hoy te recomendamos" y sus opciones.********************* */
+
+.divhero2 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 30%;
+  width: 90%;
+  background: var(--background);
+  color: var(--white);
+}
+.spanrecom {
+  color: var(--white);
+  font-size: 1.4rem;
+}
+/* DIV QUE CONTIENE LAS TRES OPCIONES */
+.div3opc {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* RECTANGULO DE CADA UNA DE LAS OPCIONES O CARDS*/
+.divopciones {
+  height: 80%;
+  width: 29%;
+  display: flex;
+  align-items: center;
+  background: var(--black-graphite);
+  border-radius: 15px;
+}
+/* TEXTO ENTRE IMAGEN Y BOTON DE LA CARDS*/
+.divtextopc {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.minispan {
+  color: #504f4f;
+  font-size: 0.9rem;
+}
+.preciohero {
+  background: linear-gradient(
+    to right,
+    var(--yellow-primary),
+    var(--red-secondary)
+  );
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.divimgopc1 {
+  background-image: url("../images/menu/Photo Menu-9.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+  width: 100px;
+}
+.divimgopc2 {
+  background-image: url("../images/menu/Photo Menu-8.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+  width: 100px;
+}
+.divimgopc3 {
+  background-image: url("../images/menu/Photo Menu-10.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+  width: 100px;
+}
+.botonagregar {
+  margin-left: 20px;
+  padding: 5px 15px;
+  border-radius: 15px;
+  border: none;
+  color: var(--white);
+  font-weight: 800;
+  background: linear-gradient(
+    to right,
+    var(--yellow-primary),
+    var(--red-primary)
+  );
+}
+
+
