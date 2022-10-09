@@ -25,12 +25,12 @@ body {
 }
 
 main {
-  padding: 0 60px;
+  padding: 0 120px;
 }
 
 /* CATEGORIES */
 .categories-section > div > h2 {
-  padding: 30px 20px;
+  padding: 30px 00px;
   font-size: 1.1rem;
   font-weight: 800;
   margin-bottom: 1rem;
@@ -38,7 +38,7 @@ main {
 
 .categories-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -115,7 +115,7 @@ main {
   display: flex;
   justify-content: space-between;
   height: 65%;
-  width: 90%;
+  width: 100%;
   margin-top: 6rem;
   background: var(--background);
   color: --white;
@@ -194,7 +194,7 @@ main {
   flex-direction: column;
   gap: 12px;
   height: 30%;
-  width: 90%;
+  width: 100%;
   background: var(--background);
   color: var(--white);
 }
@@ -275,5 +275,3 @@ main {
     var(--red-primary)
   );
 }
-
-
