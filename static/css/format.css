@@ -21,5 +21,88 @@ body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--background);
 }
+
+/* COMIENZO PORTADA,ANCHO Y ALTO PARA OCUPAR TODA LA PANTALLA Y CENTRO HERO1 Y HERO2 EN EJE X/Y */
 .sectionportada {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background);
+}
+
+/*HERO1 CONTIENE EL TEXTO Y LAS PORCIONES DE PIZZA */
+
+.divhero1 {
+  display: flex;
+  justify-content: space-between;
+  height: 65%;
+  width: 90%;
+  margin-top: 6rem;
+  background: var(--background);
+  color: --white;
+}
+.divtext {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+h1 {
+  color: #fff;
+  font-size: 4rem;
+}
+h2 {
+  color: #fff;
+  font-size: 3rem;
+}
+.hero1p {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+.botonvermas {
+  padding: 1rem 3rem;
+  border-radius: 15px;
+  border: none;
+  color: #fff;
+  font-weight: 800;
+  background: linear-gradient(to right, #ffa400, #fc2933);
+}
+
+/* DIV2PORCIONES VA A LA DERECHA CON IMAGENES DE PORCIONES DE PIZZA*/
+
+.div2porciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+}
+.imagen1 {
+  height: 90%;
+  width: 50%;
+  right: -130px;
+  background-image: url("../images/hero/image34.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: relative;
+}
+.imagen2 {
+  position: relative;
+  top: -70px;
+  height: 72%;
+  width: 50%;
+  background-image: url("../images/hero/pizza1.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+.divhero2 {
+  height: 30%;
+  width: 90%;
+  background: var(--background);
+  color: --white;
+  border: solid #fff;
 }
