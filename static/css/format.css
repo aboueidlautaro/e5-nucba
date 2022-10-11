@@ -1,5 +1,5 @@
 /* Import Montserrat font  */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;250;300;400;500;600;700;800;900&display=swap");
 
 :root {
   --background: #131415;
@@ -274,4 +274,32 @@ main {
     var(--yellow-primary),
     var(--red-primary)
   );
+}
+footer {
+  display: flex;
+  color: #131415;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 25px;
+}
+footer a, 
+footer p { 
+    color:#FFFFFF;
+    font-weight: 250;
+    font-size: 14px;
+    text-decoration: none;
+   
+}
+footer span {
+  font-weight: 900;
+  font-size: 14px;
+}
+.footer-link {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
