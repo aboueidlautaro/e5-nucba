@@ -15,7 +15,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: solid 1px red;
 }
 
 body {
@@ -98,7 +97,7 @@ body {
 }
 
 .imagen2 {
-  height: 380px;
+  height: 400px;
   width: 400px;
   position: absolute;
   right: -10px;
@@ -133,11 +132,14 @@ body {
   width: 29%;
   display: flex;
   align-items: center;
+  justify-content: center;
   background: var(--black-graphite);
   border-radius: 15px;
 }
 /* TEXTO ENTRE IMAGEN Y BOTON DE LA CARDS*/
 .divtextopc {
+  height: 80%;
+  width: auto;
   display: flex;
   flex-direction: column;
   gap: 3px;
@@ -163,22 +165,22 @@ body {
   background-image: url("../images/menu/Photo Menu-9.svg");
   background-repeat: no-repeat;
   background-position: center;
-  height: 100px;
-  width: 100px;
+  min-height: 100px;
+  min-width: 100px;
 }
 .divimgopc2 {
   background-image: url("../images/menu/Photo Menu-8.svg");
   background-repeat: no-repeat;
   background-position: center;
-  height: 100px;
-  width: 100px;
+  min-height: 100px;
+  min-width: 100px;
 }
 .divimgopc3 {
   background-image: url("../images/menu/Photo Menu-10.svg");
   background-repeat: no-repeat;
   background-position: center;
-  height: 100px;
-  width: 100px;
+  min-height: 100px;
+  min-width: 100px;
 }
 .botonagregar {
   margin-left: 20px;
