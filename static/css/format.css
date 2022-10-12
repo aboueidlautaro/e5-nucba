@@ -40,12 +40,13 @@ body {
   justify-content: space-between;
   height: 65%;
   width: 90%;
-  margin-top: 6rem;
+  margin-top: 2.5rem;
   background: var(--background);
   color: --white;
 }
 
 .divtext {
+  width: 45%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -82,26 +83,26 @@ body {
 
 /* DIV2PORCIONES VA A LA DERECHA CON IMAGENES DE PORCIONES DE PIZZA*/
 
-.div2porciones {
+.divcontenedorpizzas {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 50%;
+  width: 40%;
 }
-
+.divimagenespizzas {
+  display: flex;
+  width: 500px;
+  height: 500px;
+}
 .imagen1 {
   height: 370px;
   width: 270px;
-  position: absolute;
 }
 
 .imagen2 {
-  height: 400px;
-  width: 400px;
+  height: 390px;
+  width: 390px;
   position: absolute;
-  right: -10px;
-  bottom: 175px;
+  right: 30px;
+  top: 40px;
 }
 
 /* SEGUNDA PARTE DEL HERO "Hoy te recomendamos" y sus opciones.********************* */
@@ -124,13 +125,14 @@ body {
   width: 100%;
   height: 80%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 /* RECTANGULO DE CADA UNA DE LAS OPCIONES O CARDS*/
 .divopciones {
-  height: 80%;
-  width: 29%;
+  height: 110px;
+  width: 360px;
   display: flex;
+  gap: 10px;
   align-items: center;
   justify-content: center;
   background: var(--black-graphite);
@@ -139,11 +141,10 @@ body {
 /* TEXTO ENTRE IMAGEN Y BOTON DE LA CARDS*/
 .divtextopc {
   height: 80%;
-  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 3px;
+  gap: 5px;
 }
 
 .minispan {
@@ -166,26 +167,27 @@ body {
   background-image: url("../images/menu/Photo Menu-9.svg");
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 100px;
-  min-width: 100px;
+  background-size: cover;
+  min-height: 90px;
+  min-width: 90px;
 }
 .divimgopc2 {
   background-image: url("../images/menu/Photo Menu-8.svg");
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 100px;
-  min-width: 100px;
+  background-size: cover;
+  min-height: 90px;
+  min-width: 90px;
 }
 .divimgopc3 {
   background-image: url("../images/menu/Photo Menu-10.svg");
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 100px;
-  min-width: 100px;
+  background-size: cover;
+  min-height: 90px;
+  min-width: 90px;
 }
 .botonagregar {
-  margin-left: 20px;
-  margin-right: 15px;
   padding: 5px 15px;
   border-radius: 15px;
   border: none;
