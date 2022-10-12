@@ -15,7 +15,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: solid red;
+  border: solid 1px red;
 }
 
 body {
@@ -92,24 +92,17 @@ body {
 }
 
 .imagen1 {
-  height: 90%;
-  width: 50%;
-  right: -130px;
-  background-image: url("../images/hero/image34.svg");
-  background-repeat: no-repeat;
-  background-size: auto;
-  position: relative;
+  height: 370px;
+  width: 270px;
+  position: absolute;
 }
 
 .imagen2 {
-  position: relative;
-  top: -70px;
-  height: 72%;
-  width: 50%;
-  background-image: url("../images/hero/pizza1.svg");
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
+  height: 380px;
+  width: 400px;
+  position: absolute;
+  right: -10px;
+  bottom: 180px;
 }
 
 /* SEGUNDA PARTE DEL HERO "Hoy te recomendamos" y sus opciones.********************* */
