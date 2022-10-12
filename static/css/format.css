@@ -1,5 +1,5 @@
 /* Import Montserrat font  */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;250;300;400;500;600;700;800;900&display=swap");
 
 :root {
   --background: #131415;
@@ -9,17 +9,163 @@
   --yellow-secondary: #ffa100;
   --red-primary: #fc2933;
   --red-secondary: #fb103d;
+  --shadow: #010207;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+  
 }
 
 body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--background);
+  color: var(--white);
+}
+
+header{
+background:#131415;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 90px;
+padding: 0px 30px 0px 30px;
+position: fixed;
+top: 0;
+}
+
+.logo img{
+  margin-top: 50px;
+  margin-left: 25px;
+}
+
+
+.navbar,
+.navitems{
+    display: flex;
+    align-items: center;
+    justify-content:center
+    
+
+}
+
+.navitems{
+    gap: 70px;
+    list-style: none;
+    padding-right: 70px;
+    
+}
+ 
+.navitems a{
+    color:#ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: 10px;
+}
+ 
+.cart{
+  position: relative;
+}
+
+#cartnum{
+  position:absolute;
+  top: 0;
+  left: 90%;
+  background:#FF4B4B;
+  width: 12px;
+  height: 12px;
+  border-radius: 50% ;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  color: white;
+  padding: 3px;
+  font-size: 10px;
+  border: 1px solid #ffffff
+}
+
+
+main {
+  padding: 100px 120px;
+}
+
+/* CATEGORIES */
+.categories-section > div > h2 {
+  padding: 30px 00px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.categories-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 30px;
+}
+
+.category {
+  flex-grow: 1;
+  flex-basis: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: var(--black-graphite);
+  min-height: 170px;
+  min-width: 150px;
+
+  border-radius: 15px;
+  z-index: 1;
+  box-shadow: 0 0 40px var(--shadow);
+  transition: all 0.3s ease-in-out;
+}
+
+.category:hover {
+  transform: scale(1.048);
+  transition: all 0.3s ease-in-out;
+}
+
+.category > h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.category > img:first-child {
+  max-height: auto;
+  height: 87px;
+  object-fit: contain;
+}
+
+.category:nth-child(1) > img {
+  width: 73px;
+  height: auto;
+}
+
+.back-image-category {
+  width: 84px;
+  height: auto;
+  filter: blur(3px);
+  position: absolute;
+  translate: 3px -25px;
+  z-index: -1;
+}
+
+.bar-category {
+  border-radius: 15px;
+  height: 4px;
+  width: 24px;
+  background: linear-gradient(
+    to right,
+    var(--yellow-secondary),
+    var(--red-secondary)
+  );
 }
 
 /* COMIENZO PORTADA,ANCHO Y ALTO PARA OCUPAR TODA LA PANTALLA Y CENTRO HERO1 Y HERO2 EN EJE X/Y */
@@ -33,14 +179,19 @@ body {
   background-color: var(--background);
 }
 
-/*HERO1 CONTIENE EL TEXTO Y LAS PORCIONES DE PIZZA */
+/* HERO */
 
 .divhero1 {
   display: flex;
   justify-content: space-between;
   height: 65%;
+<<<<<<< HEAD
   width: 90%;
   margin-top: 2.5rem;
+=======
+  width: 100%;
+  margin-top: 6rem;
+>>>>>>> cb777d366c8614f0bb481d31b7110ffb2d72802c
   background: var(--background);
   color: --white;
 }
@@ -52,12 +203,14 @@ body {
   gap: 20px;
 }
 
-.h1Siteneszappi {
+
+.divtext > h1 {
   color: var(--white);
   font-size: 4rem;
 }
 
-.h2tenesnucba {
+
+.divtext > h2 {
   color: var(--white);
   font-size: 3rem;
 }
@@ -112,7 +265,7 @@ body {
   flex-direction: column;
   gap: 12px;
   height: 30%;
-  width: 90%;
+  width: 100%;
   background: var(--background);
   color: var(--white);
 }
@@ -198,4 +351,33 @@ body {
     var(--yellow-primary),
     var(--red-primary)
   );
+}
+
+footer {
+  display: flex;
+  color: #131415;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 25px;
+}
+footer a, 
+footer p { 
+    color:#FFFFFF;
+    font-weight: 250;
+    font-size: 14px;
+    text-decoration: none;
+   
+}
+footer span {
+  font-weight: 900;
+  font-size: 14px;
+}
+.footer-link {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
