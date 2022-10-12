@@ -197,10 +197,12 @@ main {
   gap: 20px;
 }
 
+
 .divtext > h1 {
   color: var(--white);
   font-size: 4rem;
 }
+
 
 .divtext > h2 {
   color: var(--white);
@@ -237,24 +239,17 @@ main {
 }
 
 .imagen1 {
-  height: 90%;
-  width: 50%;
-  right: -130px;
-  background-image: url("../images/hero/image34.svg");
-  background-repeat: no-repeat;
-  background-size: auto;
-  position: relative;
+  height: 370px;
+  width: 270px;
+  position: absolute;
 }
 
 .imagen2 {
-  position: relative;
-  top: -70px;
-  height: 72%;
-  width: 50%;
-  background-image: url("../images/hero/pizza1.svg");
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  right: -10px;
+  bottom: 175px;
 }
 
 /* SEGUNDA PARTE DEL HERO "Hoy te recomendamos" y sus opciones.********************* */
@@ -285,13 +280,17 @@ main {
   width: 29%;
   display: flex;
   align-items: center;
+  justify-content: center;
   background: var(--black-graphite);
   border-radius: 15px;
 }
 /* TEXTO ENTRE IMAGEN Y BOTON DE LA CARDS*/
 .divtextopc {
+  height: 80%;
+  width: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 3px;
 }
 
@@ -315,25 +314,26 @@ main {
   background-image: url("../images/menu/Photo Menu-9.svg");
   background-repeat: no-repeat;
   background-position: center;
-  height: 100px;
-  width: 100px;
+  min-height: 100px;
+  min-width: 100px;
 }
 .divimgopc2 {
   background-image: url("../images/menu/Photo Menu-8.svg");
   background-repeat: no-repeat;
   background-position: center;
-  height: 100px;
-  width: 100px;
+  min-height: 100px;
+  min-width: 100px;
 }
 .divimgopc3 {
   background-image: url("../images/menu/Photo Menu-10.svg");
   background-repeat: no-repeat;
   background-position: center;
-  height: 100px;
-  width: 100px;
+  min-height: 100px;
+  min-width: 100px;
 }
 .botonagregar {
   margin-left: 20px;
+  margin-right: 15px;
   padding: 5px 15px;
   border-radius: 15px;
   border: none;
@@ -345,6 +345,7 @@ main {
     var(--red-primary)
   );
 }
+
 footer {
   display: flex;
   color: #131415;
