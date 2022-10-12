@@ -98,11 +98,11 @@ body {
 }
 
 .imagen2 {
-  height: 390px;
-  width: 390px;
+  height: 400px;
+  width: 400px;
   position: absolute;
   right: 30px;
-  top: 40px;
+  top: -20px;
 }
 
 /* SEGUNDA PARTE DEL HERO "Hoy te recomendamos" y sus opciones.********************* */
