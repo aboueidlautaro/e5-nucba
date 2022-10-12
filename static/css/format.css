@@ -25,7 +25,7 @@ body {
 }
 
 main {
-  padding: 0 120px;
+  padding: 100px 120px;
 }
 
 /* CATEGORIES */
@@ -38,22 +38,26 @@ main {
 
 .categories-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  width: 100%;
   gap: 30px;
 }
 
 .category {
+  flex-grow: 1;
+  flex-basis: 160px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
   background-color: var(--black-graphite);
-  height: 170px;
-  width: 150px;
+  min-height: 170px;
+  min-width: 150px;
+
   border-radius: 15px;
   z-index: 1;
-  box-shadow: 0 0 50px var(--shadow);
+  box-shadow: 0 0 40px var(--shadow);
   transition: all 0.3s ease-in-out;
 }
 
