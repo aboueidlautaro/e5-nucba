@@ -13,83 +13,88 @@
   --gray-letter: #504f4f;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 * {
+ 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
-  
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  
   background-color: var(--background);
   color: var(--white);
 }
 
-header{
-background:#131415;
-width: 100%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-height: 90px;
-padding: 0px 30px 0px 30px;
-position: fixed;
-top: 0;
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  padding: 0px 30px 0px 30px;
+  position: fixed;
+  top: 0;
 }
 
-.logo img{
+.logo img {
   margin-top: 50px;
   margin-left: 25px;
 }
-
 
 .navbar,
 .navitems{
     display: flex;
     align-items: center;
-    justify-content:center
-    
-
+    justify-content:center;
 }
 
-.navitems{
-    gap: 70px;
-    list-style: none;
-    padding-right: 70px;
-    
+.navitems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
- 
-.navitems a{
-    color:#ffffff;
-    font-size: 12px;
-    font-weight: 400;
-    text-decoration: none;
-    margin-left: 10px;
+
+.navitems {
+  gap: 70px;
+  list-style: none;
+  padding-right: 70px;
 }
- 
-.cart{
+
+.navitems a {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.cart {
   position: relative;
 }
 
-#cartnum{
-  position:absolute;
+#cartnum {
+  position: absolute;
   top: 0;
   left: 90%;
-  background:#FF4B4B;
+  background: #ff4b4b;
   width: 12px;
   height: 12px;
-  border-radius: 50% ;
+  border-radius: 50%;
   display: flex;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
   color: white;
   padding: 3px;
   font-size: 10px;
-  border: 1px solid #ffffff
+  border: 1px solid #ffffff;
 }
-
 
 main {
   padding: 100px 120px;
@@ -171,13 +176,15 @@ main {
 
 /* COMIENZO PORTADA,ANCHO Y ALTO PARA OCUPAR TODA LA PANTALLA Y CENTRO HERO1 Y HERO2 EN EJE X/Y */
 .sectionportada {
-  height: 100vh;
+  margin: 40px 0px;
+  height: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
+  gap: 100px 0px;
   align-items: center;
-  background-color: var(--background);
+  /* background-color: var(--background); */
 }
 
 /* HERO */
@@ -185,28 +192,26 @@ main {
 .divhero1 {
   display: flex;
   justify-content: space-between;
-  height: 65%;
+  min-height: 37%;
+  height: auto;
   width: 100%;
-  margin-top: 6rem;
+  margin-top: 2.5rem;
   background: var(--background);
   color: var(--white);
 }
 
 .divtext {
+  width: 40%;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-
 .divtext > h1 {
-  color: var(--white);
   font-size: 4rem;
 }
 
-
 .divtext > h2 {
-  color: var(--white);
   font-size: 3rem;
 }
 
@@ -221,7 +226,7 @@ main {
   border-radius: 15px;
   border: none;
   color: var(--white);
-  font-weight: 800;
+  font-weight: 700;
   background: linear-gradient(
     to right,
     var(--yellow-primary),
@@ -231,40 +236,50 @@ main {
 
 /* DIV2PORCIONES VA A LA DERECHA CON IMAGENES DE PORCIONES DE PIZZA*/
 
-.div2porciones {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 50%;
+.divcontenedorpizzas {
+  width: 60%;
+  
 }
-
+.divimagenespizzas {
+  display: flex;
+  max-height: auto;
+  max-width: 500px;
+  min-width: 300px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  float: right;
+}
 .imagen1 {
-  height: 370px;
-  width: 270px;
-  position: absolute;
+  max-height: 290px;
+  height: auto;
+  width: auto;
 }
 
 .imagen2 {
-  height: 400px;
-  width: 400px;
+  max-height: 400px;
+  height: auto;
+  width: auto;
   position: absolute;
-  right: -10px;
-  bottom: 175px;
+  left: 140px;
+  top: -100px;
 }
 
 /* SEGUNDA PARTE DEL HERO "Hoy te recomendamos" y sus opciones.********************* */
 
 .divhero2 {
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  gap: 12px;
-  height: 30%;
+  align-items: center;
+  gap: 20px 0px;
+  height: auto;
   width: 100%;
   background: var(--background);
   color: var(--white);
 }
 .spanrecom {
+  align-self: flex-start;
   color: var(--white);
   font-size: 1.4rem;
 }
@@ -273,79 +288,72 @@ main {
   width: 100%;
   height: 80%;
   display: flex;
-  justify-content: space-evenly;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 /* RECTANGULO DE CADA UNA DE LAS OPCIONES O CARDS*/
 .divopciones {
-  height: 80%;
-  width: 29%;
+  height: 110px;
+  width: 360px;
   display: flex;
+  gap: 15px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background: var(--black-graphite);
   border-radius: 15px;
-}
-/* TEXTO ENTRE IMAGEN Y BOTON DE LA CARDS*/
-.divtextopc {
-  height: 80%;
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 3px;
+  padding: 0px 10px;
+  box-shadow: 0 0 40px var(--shadow);
+  transition: all 0.3s ease-in-out;
 }
 
-.minispan {
-  color: #504f4f;
-  font-size: 0.9rem;
+.divopciones:hover {
+  transform: scale(1.048);
+  transition: all 0.3s ease-in-out;
 }
-.preciohero {
+
+.divopciones > div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.9rem;
+  width: 50%;
+  
+}
+.divopciones > div > h3 {
+  font-weight: 500;
+}
+
+.divopciones > div > span {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.divopciones > div > p {
+  opacity: 0.3;
+}
+
+.btnAddCart {
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 1rem;
+  border: none;
+  font-weight: 600;
+  color: var(--white);
   background: linear-gradient(
-    to right,
-    var(--yellow-primary),
+    99deg,
+    var(--yellow-secondary),
     var(--red-secondary)
   );
-  background-clip: text;
-  color: transparent;
+}
+
+.txtGradientPrimary {
+  background: #FFA100;
+  background: linear-gradient(to right, #FFA100 0%, #FB103D 30%);
   -webkit-background-clip: text;
-  font-size: 1.2rem;
-  font-weight: 800;
+  -webkit-text-fill-color: transparent;
 }
-.divimgopc1 {
-  background-image: url("../images/menu/Photo Menu-9.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 100px;
-  min-width: 100px;
-}
-.divimgopc2 {
-  background-image: url("../images/menu/Photo Menu-8.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 100px;
-  min-width: 100px;
-}
-.divimgopc3 {
-  background-image: url("../images/menu/Photo Menu-10.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 100px;
-  min-width: 100px;
-}
-.botonagregar {
-  margin-left: 20px;
-  margin-right: 15px;
-  padding: 5px 15px;
-  border-radius: 15px;
-  border: none;
-  color: var(--white);
-  font-weight: 800;
-  background: linear-gradient(
-    to right,
-    var(--yellow-primary),
-    var(--red-primary)
-  );
-}
+
 /* Lo mas Popular */
 
 #popular-pizzas {
@@ -421,15 +429,8 @@ main {
   font-size: 20px;
   font-weight: 700;
 }
-.btn-add {
-  background: linear-gradient(to right, #FFA100 -0.82%, #FF005C 101.53%); 
-  border-radius: 15px;  
-  padding: 5px 15px;
-  color: white;
-  font-size: 12px;
-  font-weight: 600;
-  border: transparent;
-}
+
+
 /* Footer */
 footer {
   display: flex;
@@ -442,13 +443,12 @@ footer {
   padding: 1rem;
   margin-bottom: 25px;
 }
-footer a, 
-footer p { 
-    color:#FFFFFF;
-    font-weight: 250;
-    font-size: 14px;
-    text-decoration: none;
-   
+footer a,
+footer p {
+  color: #ffffff;
+  font-weight: 250;
+  font-size: 14px;
+  text-decoration: none;
 }
 footer span {
   font-weight: 900;
