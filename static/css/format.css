@@ -10,6 +10,7 @@
   --red-primary: #fc2933;
   --red-secondary: #fb103d;
   --shadow: #010207;
+  --gray-letter: #504f4f;
 }
 
 html {
@@ -196,7 +197,7 @@ main {
   width: 100%;
   margin-top: 2.5rem;
   background: var(--background);
-  color: --white;
+  color: var(--white);
 }
 
 .divtext {
@@ -353,7 +354,84 @@ main {
   -webkit-text-fill-color: transparent;
 }
 
+/* Lo mas Popular */
 
+#popular-pizzas {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  padding: 100px 0;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.populars{
+  display: flex;
+  align-self: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.populars h2{
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--white);
+}
+.pizzas-tarjet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+  max-width: 1500px;
+  flex-wrap: wrap;
+}
+.pizzas {
+  background: var(--black-graphite);
+  padding: 20px 30px;
+  background: #252525;
+  border-radius: 15px;
+  box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+  flex-wrap: wrap;
+}
+
+.pizzas-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  
+}
+.img-pz{
+  mix-blend-mode: normal;
+  border-radius: 16px;
+  
+}
+.pizza-top, .pizza-mid, .pizza-bot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.pizza-top h3 {
+  color: var(--white);
+  font-size: 15px;
+  font-weight: 500;
+}
+.pizza-mid p{
+  color: var(--gray-letter);
+  font-size: 14px;
+  font-weight: 400;
+}
+.pizza-bot p{
+  background: linear-gradient(to right, #FFA100, #FF005C );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+/* Footer */
 footer {
   display: flex;
   color: #131415;
@@ -381,3 +459,4 @@ footer span {
   justify-content: center;
   gap: 20px;
 }
+
