@@ -33,6 +33,7 @@ body {
 
 
 header {
+  background-color: var(--background);
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -454,6 +455,11 @@ footer span {
   font-weight: 900;
   font-size: 14px;
 }
+
+footer li {
+  list-style: none;
+}
+
 .footer-link {
   display: flex;
   justify-content: center;
