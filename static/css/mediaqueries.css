@@ -1,0 +1,65 @@
+@media (max-width: 480px) {
+  .imagen1 {
+    position: absolute;
+    left: 60px;
+  }
+  .imagen2 {
+    left: 20px;
+    top: 0px;    
+  }
+}
+@media (max-width: 680px) {
+  main {
+    padding: 100px 40px;
+    overflow: hidden;
+  }
+  
+  .divcontenedorpizzas {
+    height: 35vh;
+    width: 70%;
+  }
+  .divimagenespizzas {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+    
+  }
+  .imagen1 {
+    object-fit: contain;
+    position: absolute;
+    left: 0px;
+    max-height: 210px;
+  }
+  .imagen2 {
+    left: 70px;
+    top: 80px;    
+    max-height: 320px;
+  }
+  
+  .divtext > h1 {
+    font-size: 3rem;
+  }
+  
+  .divtext > h2 {
+    font-size: 2rem;
+  }
+  .hero1p {
+    font-size: 1.1rem;
+  }
+}
+
+
+@media (max-width: 1080px) {
+  .divhero1 {
+    flex-direction: column;
+  }
+  .divtext, .divcontenedorpizzas {
+    width: 100%;
+  }
+}
+
+
+
+
+
