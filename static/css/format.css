@@ -30,8 +30,8 @@ body {
   color: var(--white);
 }
 
+
 header {
-  background: #131415;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -48,6 +48,12 @@ header {
 }
 
 .navbar,
+.navitems{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
 .navitems {
   display: flex;
   align-items: center;
